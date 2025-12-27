@@ -4,7 +4,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import '../models/todo_model.dart';
 
 class TodoService {
-  static const String baseUrl = 'http://ip:route/api';
+  static const String baseUrl = 'https://todo-backend-golang-ten.vercel.app/api';
 
   Future<String> _requireToken() async {
     final prefs = await SharedPreferences.getInstance();
